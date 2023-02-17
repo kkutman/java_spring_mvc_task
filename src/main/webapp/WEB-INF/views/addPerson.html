@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>save person</title>
+</head>
+<body>
+<form th:method="POST" th:action="create" th:object="${newPerson}">
+    <div>
+        <label for="name"> name </label>
+<input type="text" th:field="*{name}"id="name">
+        </label>
+    </div>
+
+    <div>
+        <label for="img" > image </label>
+            <input type="text" th:field="*{image}"id="img">
+        </label>
+    </div>
+    <button type="submit">SAVE</button>
+
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form th:method="PATCH" th:action="update" th:object="${updatePerson}">
+    <div>
+        <label for="name"> name </label>
+        <input type="text" th:field="*{name}"id="name">
+        </label>
+    </div>
+
+    <div>
+        <label for="img" > image </label>
+        <input type="text" th:field="*{image}"id="img">
+        </label>
+    </div>
+    <button type="submit"> update </button>
+
+
+</form>
+
+
+</body>
+</html>
